@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.opencv.javacv.facerecognition"
+    android:versionCode="22"
+    android:versionName="2.2" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lockcar"
+        android:label="@string/app_name"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.appcv.actividades.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.EntrenarRostro"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.GaleriaRostros"
+            android:label="@string/txt_titulo_galeria"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.DetectorBT"
+            android:label="@string/title_activity_detector_bt"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.DatosPersonales"
+            android:label="@string/title_activity_datos_personales"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.FinalizarConfiguracion"
+            android:label="@string/title_activity_finalizar_configuracion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.LogueoClave"
+            android:label="@string/title_activity_logueo_clave"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.Asistente"
+            android:label="@string/title_activity_asistente"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.Usuario"
+            android:label="@string/title_activity_usuario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.Administrador"
+            android:label="@string/title_activity_administrador"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.AdministrarUsuarios"
+            android:label="@string/title_activity_admin_usuarios"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.ModificarUsuario"
+            android:label="@string/title_activity_mod_usuario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.Instrucciones"
+            android:label="@string/title_activity_intrucciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.GrabarPatronFacial"
+            android:label="@string/title_activity_grabar_patron_facial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.AdministrarMoviles"
+            android:label="@string/title_activity_admin_dispositivos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.ModificarDispositivo"
+            android:label="@string/title_activity_mod_dispositivo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.Ajustes"
+            android:label="@string/title_activity_arduino"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.LogueoFacial"
+            android:label="@string/title_activity_logueo_facial"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.NuevoRostro"
+            android:label="@string/title_activity_nuevo_rostro"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.NuevoUsuario"
+            android:label="@string/title_activity_nuevo_usuario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appcv.actividades.RecuperarAcceso"
+            android:label="@string/title_activity_recuperar_acceso" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+</manifest>

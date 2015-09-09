@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/appcv/actividades/GaleriaRostros.java" />
+    </issue>
+    <issue id="HandlerLeak" severity="ignore">
+        <ignore path="src/com/appcv/actividades/EntrenarRostro.java" />
+        <ignore path="src/com/appcv/actividades/LogueoFacial.java" />
+    </issue>
+    <issue id="InflateParams" severity="ignore" />
+</lint>
